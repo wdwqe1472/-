@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>레벨 1</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="quiz-container">
+    <h1>레벨 1</h1>
+    <p>Q. 여기에 너가 만든 첫 번째 문제 넣기</p>
+    <input type="text" id="answer" placeholder="정답 입력">
+    <button onclick="checkAnswer()">제출</button>
+  </div>
+
+  <script>
+    function checkAnswer() {
+      const input = document.getElementById('answer').value.trim().toLowerCase();
+      if (input === "정답") {
+        window.location.href = "level2.html";
+      } else {
+        alert("땡! 다시 시도해봐.");
+      }
+    }
+  </script>
+</body>
+</html>

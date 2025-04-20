@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>주히의 생일 미션</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      background: #fff9f0;
+      font-family: 'Arial', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      color: #ff69b4;
+      margin-bottom: 20px;
+    }
+
+    .cats {
+      font-size: 4rem;
+      margin-bottom: 40px;
+    }
+
+    .start-btn {
+      background-color: #ffb6c1;
+      border: none;
+      padding: 15px 30px;
+      font-size: 1.2rem;
+      border-radius: 30px;
+      cursor: pointer;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      transition: all 0.3s ease;
+    }
+
+    .start-btn:hover {
+      background-color: #ff69b4;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <h1>🎂 주히의 생일 미션 🎂</h1>
+  <div class="cats">🐱 🐈 😺 🐾</div>
+  <button class="start-btn" onclick="startGame()">시작하기</button>
+
+  <script>
+    function startGame() {
+      window.location.href = "index.html";
+    }
+  </script>
+</body>
+</html>
